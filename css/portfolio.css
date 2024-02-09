@@ -1,0 +1,301 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  border: none;
+  outline: none;
+}
+:root {
+  --bg-color: #243d44;
+  --second-bg-color: #ff735c;
+  --main-color: ;
+  --text-color: ;
+  --second-color: ;
+  --other-color: ;
+
+  --h1-font: 7rem;
+  --h2-font: 3.5rem;
+  --p-font: 1.1rem;
+}
+/*----header----*/
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  padding: 30px ;
+  border-bottom: 1px solid transparent;
+  transition: all ease 0.5s;
+
+}
+.navlist {
+  display: flex;
+}
+.navlist a {
+  color: var(--bg-color);
+  font-size: var(--p-font);
+  font-weight: 600;
+  margin: 0 40px;
+  transition: all ease 0.4s;
+}
+.navlist a:hover {
+  color: var(--second-bg-color);
+}
+section {
+  padding: 120px 19% 100px;
+}
+/*----home section----*/
+.home {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.hero-text {
+  flex-basis: 40%;
+  text-align: left;
+  margin-left: 40px;
+  line-height: 100px;
+}
+.main-img {
+  flex-basis: 50%;
+}
+.main-img img {
+  width: 100%;
+}
+.hero-text h3 {
+  color: var(--bg-color);
+  font-size: 22px;
+  font-weight: 600;
+  word-spacing: 10px;
+}
+.hero-text h1 {
+  font-family: "Dosis", sans-serif;
+  font-size: var(--h1-font);
+  color: var(--bg-color);
+  font-weight: 600;
+}
+.btn {
+  display: inline-bLlock;
+  padding: 16px 45px;
+  background: var(--bg-color);
+  color: white;
+  font-size: var(--p-font);
+  font-weight: 600;
+  border: 2px solid var(--bg-color);
+  transition: all ease 0.5s;
+  border-radius: 0.5rem;
+
+}
+.btn:hover {
+  cursor: pointer;
+  color: var(--second-bg-color);
+  transform: transLateX(5px);
+  background: transparent;
+  border: 2px solid var(--second-bg-color);
+}
+/*----about section----*/
+.about {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+}
+.about-right {
+  flex-basis: 40%;
+  text-align: right;
+  margin-left: 40px;
+  text-align: left;
+}
+.about-right h2 {
+  font-family: "Dosis", sans-serif;
+  color: var(--bg-color);
+  font-size: var(--h2-font);
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+.about-right h5 {
+  color: var(--bg-color);
+  font-size: 22px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+.about-right p {
+  color: var(--bg-color);
+  font-size: var(--p-font);
+  line-height: 30px;
+  margin-bottom: 3rem;
+}
+.about-left {
+  flex-basis: 50%;
+}
+.about-left img {
+  width: 80%;
+}
+
+/*----work section----*/
+.work {
+  padding: 0;
+}
+.work h2 {
+  font-family: "Dosis", sans-serif;
+  color: var(--bg-color);
+  font-size: var(--h2-font);
+  margin-bottom: 30px;
+  font-weight: 800;
+  text-align: center;
+}
+.work h5 {
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+}
+
+.work-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.work-col {
+  background-color: var(--bg-color);
+  color: white;
+  padding-bottom: 25px;
+  border-radius: 10px;
+  margin: 20px 20px;
+  box-shadow: 0 2px 40px 0 rgba(110, 130, 208, 0.18);
+  align-items: center;
+  text-align: center;
+}
+.work-col img {
+  box-sizing: border-box;
+  width: 450px;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+/*----contact section----*/
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+.contact-text h2 {
+  font-family: "Dosis", sans-serif;
+  font-size: var(--h2-font);
+  color: var(--bg-color);
+  font-weight: 800;
+}
+.contact-text h4 {
+  margin: 15px 0;
+  font-family: "Dosis", sans-serif;
+  color: var(--bg-color);
+  font-size: 20px;
+  font-weight: 600;
+}
+.contact-text p {
+  color: var(--bg-color);
+  font-size: var(--p-font);
+  line-height: 30px;
+  margin-bottom: 3rem;
+}
+.contact-list {
+  margin-bottom: 3rem;
+}
+.contact-list li {
+  margin-bottom: 10px;
+  display: block;
+}
+.contact-list li a {
+  display: block;
+  color: var(--bg-color);
+  font-size: var(--p-font);
+  font-weight: 600;
+  transition: all 0.4s ease;
+}
+.contact-list li a:hover {
+  transform: scale(1.01) translateY(-5px);
+  color: var(--second-bg-color);
+}
+.contact-form form {
+  position: relative;
+}
+.contact-form form input,
+form textarea {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 18px;
+  background: var(--bg-color);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+}
+.contact-form textarea {
+    resize: none;
+    height: 220px;
+    
+}
+.button button{
+  cursor: pointer;
+  display: inline-bLlock;
+  padding: 16px 45px;
+  background: var(--bg-color);
+  color: white;
+  font-size: var(--p-font);
+  font-weight: 600;
+  border: 2px solid var(--bg-color);
+  transition: all ease 0.5s;
+  border-radius: 0.5rem;
+}
+.button button:hover {
+  color: var(--second-bg-color);
+  transform: transLateX(5px);
+  background: transparent;
+  border: 2px solid var(--second-bg-color);
+}
+
+/*----footer section----*/
+.footer{
+    text-align: center;
+    align-items: center;
+    padding: 50px 0 30px;
+}
+hr{
+	width: 100%;
+	border: 0;
+	border-top: 3px solid var(--bg-color);
+}
+.footer h2{
+    font-family: "Dosis", sans-serif;
+    font-size: 3rem;
+    color: var(--bg-color);
+    font-weight: 700;
+    margin: 3rem;
+}
+.contact-icons i{
+    height: 50px;
+    width: 50px;
+    background: var(--bg-color);
+    border-radius: 0.5rem;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-right: 20px;
+    transition: all .40s ease;
+    
+}
